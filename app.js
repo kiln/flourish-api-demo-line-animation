@@ -86,10 +86,8 @@ d3.csv(csvURL, function (dataCSV) {
 
   const flourish_visualization = new Flourish.Live(opts);
 
-  // Run the loop
-  $(document).ready(function () {
-    loopWithDelay(headers);
-  });
+  // Run the loop initially
+  loopWithDelay(headers);
 
   // Replay button
   document.querySelector("button").addEventListener("click", function () {
