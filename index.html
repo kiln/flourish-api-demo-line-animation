@@ -8,43 +8,38 @@
   <script src="https://cdn.flourish.rocks/flourish-live-v5.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
 
-
+  <style>
+    #chart {
+      max-width: 800px;
+    }
+  
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(40,40,40)
+    }
+  
+    #replayButton {
+          background-color: rgb(40,40,40);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+  
+  </style>
 
 </head>
-<style>
-  #chart {
-    max-width: 800px;
-  }
-  body {
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(40,40,40)
-}
-table {
-    table-layout: fixed;
-    width: 100%; /* Optional: Set the table width */
-  }
-  th, td {
-    width: 50%; /* Adjust the width percentage as needed */
-  }
-  
-</style>
 <body>
+  <h1>World average surface temperatures, 1950-2024</h1>
 
+  <div id="chart"></div>
 
+  <button id="replayButton">Replay</button>
 
-<div><h1>World average surface temperatures, 1950-2024</h1></div>
-
-
-<div id="chart"></div>
-<button id="replayButton" style="  background-color: rgb(40,40,40);
-color: white;
-padding: 10px 20px;
-border: none;
-font-size: 14px;
-font-weight: bold;
-border-radius: 5px;
-cursor: pointer;">Replay</button>
- <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
 
